@@ -40,7 +40,7 @@ public class DBHelper {
 
     public DBHelper() {
         try {
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/", "root", "Shashi.742744");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/", "root", "${passwd}");
             st = con.createStatement();
         } catch (SQLException ex) {
             Logger.getLogger(DBHelper.class.getName()).log(Level.SEVERE, null, ex);
